@@ -1,0 +1,113 @@
+@import './variable';
+// :root {
+//     --brand-orange: #EC7C03;
+//     --brand-green: #81C115;
+//     --brand-light-orange: #F2994A;
+//     --brand-yellow: #F2C94C;
+//     --brand-blue: #2F80ED;
+//     --brand-red: #EB5757;
+//     --text-blue: #002448;
+//     --text-blue-v2: #022444;
+//     --text-light-blue: #4C6C8D;
+//     --text-light-grey: #97A6B1;
+//     --text-dark-grey: #8A8A8A;
+//     --white: #F6FFE7;
+//     --green-light: #DCEAC5;
+// }
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 1300px;
+}
+
+.sect-space {
+    margin: 50px 0;
+}
+
+.text-generic {
+    font-size: 15px;
+    color: $text-light-blue;
+}
+
+.large-heading {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.section-heading {
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.section-heading::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: $brand-orange;
+    position: absolute;
+    bottom: -20%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+}
+
+.primary-btn-style {
+    font-size: 18px;
+    padding: 8px 45px;
+    background-color: $brand-orange;
+    color: white;
+    margin-top: 20px;
+    border: none;
+    font-weight: 600;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.popup-form-label {
+    font-size: 14px;
+}
+
+.popup-form-input {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.form-check-input:checked {
+    background-color: $brand-orange;
+    border-color: $brand-orange;
+}
+
+.form-check-input:focus,
+.form-select:focus,
+.btn:focus,
+.form-control:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: #d4d4d4;
+}
+
+.text-green-color {
+    color: $brand-green;
+}
+
+.text-red-color {
+    color: #EB5757;
+}
+
+.text-orange-color {
+    color: $brand-orange;
+}
+
+
+/*# sourceMappingURL=theme.css.map */
