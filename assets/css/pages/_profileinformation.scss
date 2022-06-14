@@ -87,6 +87,14 @@
         }
     }
     .dashboard-profile-information-wrapper {
+        border-radius: 10px;
+        height: 600px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        background-color: white;
+        padding: 20px;
         .dashboard-profile-information-image-wrapper {
             .dashboard-profile-image-wrapper {
                 width: 100%;
@@ -94,18 +102,92 @@
                     width: 100%;
                 }
             }
+            .btn {
+                color: $brand-orange;
+                border: 1px solid $brand-orange;
+            }
+            .deactivate-account {
+                color: $brand-red;
+                font-size: 14px;
+                margin-top: 10px;
+                display: block;
+                text-align: center;
+                text-decoration: none;
+            }
         }
-        .btn {
-            color: $brand-orange;
-            border: 1px solid $brand-orange;
+    }
+    .dashboard-profile-info-details {
+        .info-detail-item-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .form-item {
+                width: 60%;
+                .form-label {
+                    font-size: 13px;
+                    color: rgba(0, 36, 72, 0.6);
+                }
+                .form-control {
+                    font-size: 14px;
+                    font-weight: 600;
+                    background-color: $white;
+                }
+                .number-input {
+                    position: relative;
+                    .verified {
+                        position: absolute;
+                        top: 50%;
+                        right: 10px;
+                        margin-bottom: 0;
+                        transform: translate(0, -50%);
+                        -webkit-transform: translate(0, -50%);
+                        -moz-transform: translate(0, -50%);
+                        -ms-transform: translate(0, -50%);
+                        -o-transform: translate(0, -50%);
+                        font-size: 13px;
+                    }
+                    .country-code {
+                        position: absolute;
+                        top: 5px;
+                        left: 10px;
+                    }
+                    .form-control {
+                        padding-left: 40px;
+                    }
+                }
+                .email-input {
+                    position: relative;
+                    .verify {
+                        position: absolute;
+                        top: 50%;
+                        right: 10px;
+                        margin-bottom: 0;
+                        transform: translate(0, -50%);
+                        -webkit-transform: translate(0, -50%);
+                        -moz-transform: translate(0, -50%);
+                        -ms-transform: translate(0, -50%);
+                        -o-transform: translate(0, -50%);
+                        font-size: 13px;
+                        border: none;
+                        outline: none;
+                        background-color: transparent;
+                    }
+                }
+            }
+            .btn {
+                color: $brand-orange;
+                border: 1px solid $brand-orange;
+                font-size: 13px;
+            }
         }
-        .deactivate-account {
-            color: $brand-red;
-            font-size: 14px;
-            margin-top: 10px;
-            display: block;
-            text-align: center;
-            text-decoration: none;
-        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .dashboard-profile-information-wrapper .dashboard-profile-info-details {
+        margin-top: 40px;
+    }
+    .dashboard-profile-information-wrapper {
+        height: unset;
     }
 }
