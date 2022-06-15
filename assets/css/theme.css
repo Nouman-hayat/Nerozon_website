@@ -560,6 +560,10 @@
   position: relative;
 }
 
+.user-dashboard-home-menu .active-list {
+  background-color: #F6FFE7;
+}
+
 .user-dashboard-home-menu .active-list::before {
   content: "";
   display: block;
@@ -1195,6 +1199,101 @@
   }
   .dashboard-profile-information-wrapper {
     height: unset;
+  }
+}
+
+.add-new-address {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background-color: white;
+  padding: 40px 20px;
+  margin-bottom: 20px;
+}
+
+.add-new-address .btn {
+  color: #EC7C03;
+  border-color: #EC7C03;
+}
+
+.saved-address-wrapper {
+  background-color: white;
+  padding: 20px;
+}
+
+.saved-address-wrapper h5 {
+  font-size: 17px;
+}
+
+.saved-address-wrapper .saved-address-item-wrapper {
+  border: 1px solid #dbdbdb;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -o-border-radius: 10;
+  background-color: white;
+  padding: 10px;
+}
+
+.saved-address-wrapper .saved-address-item-wrapper .item-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.saved-address-wrapper .saved-address-item-wrapper .item-header h6 {
+  margin-bottom: 0;
+  margin-right: 50px;
+  font-size: 14px;
+}
+
+.saved-address-wrapper .saved-address-item-wrapper .item-header span {
+  background-color: #e4e4e4;
+  color: black;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.saved-address-wrapper .saved-address-item-wrapper p {
+  font-size: 12px;
+  color: #97A6B1;
+  width: 250px;
+}
+
+.saved-address-wrapper .saved-address-item-wrapper .saved-address-right .bi-pencil-square {
+  display: block;
+  margin: 15px 0;
+  font-size: 20px;
+  color: #b6b6b6;
+}
+
+.saved-address-wrapper .saved-address-item-wrapper .saved-address-right .bi-trash {
+  color: #EC7C03;
+  font-size: 20px;
+}
+
+.saved-address-wrapper .saved-address-item-wrapper .saved-address-right a {
+  color: unset;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 575px) {
+  .saved-address-wrapper .saved-address-item-wrapper p {
+    width: 200px;
   }
 }
 

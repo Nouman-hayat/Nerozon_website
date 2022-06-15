@@ -12,6 +12,10 @@
     position: relative;
 }
 
+.user-dashboard-home-menu .active-list {
+    background-color: $white;
+}
+
 .user-dashboard-home-menu .active-list::before {
     content: "";
     display: block;
