@@ -1,0 +1,285 @@
+.order-process-wrapper {
+    background-color: #F2F2F2;
+    padding: 30px 0;
+    .ship-process-wrapper {
+        .saved-address-wrapper {
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            .btn {
+                color: $brand-orange;
+                border: 1px solid $brand-orange;
+            }
+            .saved-address-item-wrapper {
+                align-items: flex-end;
+            }
+        }
+    }
+    .process-order {
+        .process-order-number {
+            font-size: 13px;
+            color: $text-dark-grey;
+        }
+        .order-single-detail-wrapper .order-single-detail-inner-wrapper .order-single-detail-left .order-single-image-detail-wrapper .order-single-details .process-order-price {
+            font-weight: 700;
+            color: black;
+            font-size: 15px;
+        }
+    }
+    .process-order-icon-left {
+        width: 570px;
+        .process-order-icon-left-card {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            .process-order-icon-left-img {
+                width: 120px;
+                img {
+                    width: 50%;
+                }
+            }
+        }
+    }
+    .process-order-icon {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        background-color: white;
+        padding: 20px;
+        .progressbar {
+            display: flex;
+            margin: 0;
+            user-select: none;
+            background-color: unset;
+        }
+        .progressbar .step {
+            text-align: center;
+            width: 100%;
+            position: relative;
+        }
+        .progressbar .step p {
+            font-weight: 500;
+            font-size: 12px;
+            color: #4C6C8D;
+            margin-bottom: 3px;
+        }
+        .progressbar .process-order-icon-left-card-inner span {
+            font-weight: 200;
+            font-size: 11px;
+            color: #97A6B1;
+        }
+        .progressbar .step .bullet {
+            height: 25px;
+            width: 25px;
+            background-color: white;
+            border: 2px solid $brand-green;
+            display: inline-block;
+            border-radius: 50%;
+            position: relative;
+            transition: 0.2s;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 25px;
+            z-index: 999;
+        }
+        .progressbar .step .bullet.active {
+            background-color: $brand-green;
+        }
+        .progressbar .step .bullet span {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .progressbar .step .bullet.active span {
+            display: none;
+        }
+        .progressbar .step .bullet:before,
+        .progressbar .step .bullet:after {
+            position: absolute;
+            content: '';
+            bottom: 10px;
+            right: -122px;
+            height: 3px;
+            width: 120px;
+            background: $brand-green;
+            z-index: 1;
+        }
+        .progressbar .step .bullet.active:after {
+            background: var(--brand-green);
+            transform: scaleX(0);
+            transform-origin: left;
+            animation: animate 0.3s linear forwards;
+        }
+        @keyframes animate {
+            100% {
+                transform: scaleX(1);
+            }
+        }
+        .progressbar .step:last-child .bullet:before,
+        .progressbar .step:last-child .bullet:after {
+            display: none;
+        }
+        .progressbar .step p.active {
+            color: #943030;
+            transition: 0.2s linear;
+        }
+        .progressbar .step .check {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            font-size: 15px;
+            transform: translate(-50%, -50%);
+            color: #fff;
+        }
+        .process-order-icon-right {
+            p {
+                color: #97A6B1;
+                font-size: 15px;
+                margin-bottom: 5px;
+            }
+            .btn {
+                color: $brand-orange;
+                border-color: $brand-orange;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .order-process-wrapper .process-order-icon {
+        flex-direction: column;
+        align-items: center;
+        .process-order-icon-right {
+            margin-top: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .order-process-wrapper .order-single-detail-wrapper {
+        overflow-x: unset;
+    }
+    .order-process-wrapper .orderlist-detail {
+        width: unset;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .order-process-wrapper .process-order-icon .progressbar {
+        flex-direction: column;
+    }
+    .order-process-wrapper .process-order-icon .progressbar .step .bullet,
+    .order-process-wrapper .process-order-icon .progressbar .step .bullet:before,
+    .order-process-wrapper .process-order-icon .progressbar .step .bullet:after {
+        display: none;
+    }
+    .order-process-wrapper .order-single-detail-wrapper {
+        overflow-x: scroll;
+    }
+    .order-process-wrapper .orderlist-detail {
+        width: 600px;
+    }
+    .order-process-wrapper .process-order-icon {
+        margin-top: 30px;
+    }
+    .order-process-wrapper .process-order-icon-left {
+        width: 100%;
+    }
+    .order-process-wrapper .ship-process-wrapper .saved-address-wrapper .saved-address-item-wrapper {
+        flex-direction: column;
+        justify-content: start;
+        align-items: unset;
+    }
+}
+
+.process-coupon-applied-wrapper {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+    .process-coupon-applied-header {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #97A6B1;
+        .process-coupon-applied-left {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            .process-coupon-applied-img-wrapper {
+                width: 20px;
+                margin-right: 10px;
+                img {
+                    width: 100%;
+                }
+            }
+            p {
+                margin-bottom: 0;
+                font-size: 13px;
+                span {
+                    font-weight: 600;
+                }
+            }
+        }
+        .process-coupon-applied-right-image {
+            width: 20px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .process-coupon-applied-details-wrapper {
+        border-bottom: 1px dashed #4C6C8D;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        h6 {
+            margin-bottom: 5px;
+            font-weight: 600;
+            font-size: 15px;
+        }
+        .process-coupon-applied-detail-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            p {
+                margin-bottom: 0;
+                font-size: 12px;
+                color: #4C6C8D;
+            }
+            span {
+                font-size: 15px;
+                font-weight: 600;
+            }
+        }
+    }
+    .process-coupon-applied-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h6,
+        span {
+            margin-bottom: 5px;
+            font-weight: 600;
+            font-size: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .order-process-wrapper .row .col-lg-3 {
+        order: -1;
+        margin-bottom: 15px;
+    }
+}

@@ -72,4 +72,50 @@
     .saved-address-wrapper .saved-address-item-wrapper p {
         width: 200px;
     }
+    .add-new-address-wrapper .add-new-address {
+        flex-direction: column;
+        a {
+            margin: 15px 0;
+        }
+    }
+}
+
+.add-new-address-wrapper {
+    .add-new-address {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        a {
+            text-decoration: none;
+            color: $brand-orange;
+        }
+    }
+    .add-new-address-form {
+        background-color: white;
+        padding: 40px 20px;
+        .add-new-address-form-inner {
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .form-input-groups {
+            display: flex;
+        }
+        .form-check-input:checked {
+            border-color: $brand-green;
+            background-color: $brand-green;
+        }
+        .form-check-label {
+            font-size: 13px;
+        }
+        h6,
+        .form-label {
+            font-size: 12px;
+            font-weight: 200;
+            margin-bottom: 8px;
+            color: rgba(0, 36, 72, 0.6);
+        }
+        .form-control {
+            background-color: $white;
+        }
+    }
 }

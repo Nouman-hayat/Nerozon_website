@@ -1,0 +1,29 @@
+.wallet-wapper {
+    background-color: $text-blue-v2;
+    padding: 20px 0;
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    -ms-border-radius: 10;
+    -o-border-radius: 10;
+    border-radius: 10;
+    p {
+        margin: 0;
+        font-size: 15px;
+        color: white;
+        text-align: center;
+        span {
+            font-size: 25px;
+            font-weight: 700;
+        }
+    }
+}
+
+.wallet-history-wrapper {
+    span {
+        font-size: 17px;
+        font-weight: 600;
+    }
+    .saved-address-wrapper .saved-address-item-wrapper p {
+        width: 140px;
+    }
+}
