@@ -31,7 +31,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 370px;
+    height: 300px;
     .myorders-hero-description-wrapper {
         h2 {
             color: white;
@@ -186,16 +186,16 @@
 }
 
 @media screen and (max-width: 850px) {
-    .order-single-detail-wrapper {
+    .order-overall-list-wrapper .order-single-detail-wrapper {
         overflow-x: scroll;
     }
-    .order-single-detail-wrapper::-webkit-scrollbar {
+    .order-overall-list-wrapper .order-single-detail-wrapper::-webkit-scrollbar {
         width: 2px;
     }
-    .order-single-detail-wrapper::-webkit-scrollbar-track {
+    .order-overall-list-wrapper .order-single-detail-wrapper::-webkit-scrollbar-track {
         box-shadow: inset 0 0 2px rgba(175, 175, 175, 0.3);
     }
-    .order-single-detail-wrapper::-webkit-scrollbar-thumb {
+    .order-overall-list-wrapper .order-single-detail-wrapper::-webkit-scrollbar-thumb {
         background-color: rgb(165, 165, 165);
         outline: 1px solid rgb(172, 172, 172);
         border-radius: 10px;
@@ -204,7 +204,7 @@
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
     }
-    .orderlist-detail {
+    .order-overall-list-wrapper .orderlist-detail {
         width: 840px;
     }
 }

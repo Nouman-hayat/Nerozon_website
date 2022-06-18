@@ -582,190 +582,129 @@
         </div>
     </div>
 
-    <div class="order-process-wrapper">
+    <div class="order-process-tab">
         <div class="container">
             <div class="row">
                 <div class="col-lg-9">
-                    <div class="ship-process-wrapper">
-                        <div class="saved-address-wrapper">
-                            <h5>Ship To:</h5>
-                            <div class="saved-address-item-wrapper">
+                    <div class="order-process-tab-item">
+                        <h5>Ship To:</h5>
+                        <div class="ship-address-item-wrapper my-2">
+                            <div class="ship-address-inner-wrapper">
                                 <div class="saved-address-left">
-                                    <div class="item-header">
-                                        <h6>Shirin Ittarwala</h6>
-                                        <span>Home</span>
-                                    </div>
-                                    <p>
-                                        B-1008, Samaan II, 100 Feet Anand Nagar Nagar Rd, Near Auda Garden, Prahlad Nagar, Ahmedabad, Gujarat 380015
-                                    </p>
+                                    <input type="radio" class="form-check-input" name="address" id="address1" checked>
                                 </div>
                                 <div class="saved-address-right">
-                                    <div>
-                                        <a href="" class="btn"> Shipping Address</a>
-                                    </div>
+                                    <label for="address1">
+                                             <div class="item-header">
+                                                <h6>Shirin Ittarwala</h6>
+                                                <span>Home</span>
+                                            </div>
+                                            <p>
+                                                B-1008, Samaan II, 100 Feet Anand Nagar Nagar Rd, Near Auda Garden, Prahlad Nagar, Ahmedabad, Gujarat 380015
+                                            </p>
+                                        </label>
+                                </div>
+                            </div>
+                            <button class="btn">Deliver Here</button>
+                        </div>
+                        <div class="ship-address-item-wrapper my-2">
+                            <div class="ship-address-inner-wrapper">
+                                <div class="saved-address-left">
+                                    <input type="radio" class="form-check-input" name="address" id="address2" checked>
+                                </div>
+                                <div class="saved-address-right">
+                                    <label for="address2">
+                                             <div class="item-header">
+                                                <h6>Aizaz Ittarwala</h6>
+                                                
+                                            </div>
+                                            <p>
+                                                B-1008, Samaan II, 100 Feet Anand Nagar Nagar Rd, Near Auda Garden, Prahlad Nagar, Ahmedabad, Gujarat 380015
+                                            </p>
+                                        </label>
+                                </div>
+                            </div>
+
+                        </div>
+                        <a href="./addnewaddress.html" class="btn">+ Add New Address</a>
+                    </div>
+                    <div class="order-process-tab-item">
+                        <a href="./confirmorder.html" class="d-block">Confirm order</a>
+                    </div>
+                    <div class="order-process-tab-item">
+                        <a href="" class="d-block">Payment option</a>
+                    </div>
+
+                </div>
+                <div class="col-lg-3">
+                    <div class="process-coupon-applied-wrapper mb-2">
+                        <div class="process-coupon-applied-header">
+                            <div class="process-coupon-applied-left">
+                                <div class="process-coupon-applied-img-wrapper">
+                                    <img src="./assets/img/coupon.svg" alt="" />
+                                </div>
+                                <p>Coupon Applied: <span>EXTRA20</span></p>
+                            </div>
+                            <div class="process-coupon-applied-right">
+                                <div class="process-coupon-applied-right-image">
+                                    <img src="./assets/img/tick.svg" alt="" />
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="process-order">
-                        <div class="order-single-detail-wrapper">
-                            <div class="orderlist-detail">
-                                <div class="order-single-detail-inner-wrapper my-3">
-                                    <div class="order-single-detail-header">
-                                        <h5 class="process-order-number">
-                                            Order Id:ww13324 | Items:2
-                                        </h5>
-                                        <h5 class="order-date">
-                                            <span class="text-green-color">
-                          Shipped on Jan 21, 2020 | 10:30 AM</span
-                        >
-                      </h5>
-                    </div>
-                    <div class="order-detail-list-wrapper">
-                      <div class="row order-item custom-border-none">
-                        <div class="col-md-6">
-                          <div class="order-single-detail-left">
-                            <div class="order-single-image-detail-wrapper">
-                              <div class="order-single-image">
-                                <img src="./assets/img/image 22.png" alt="" />
-                              </div>
-                              <div class="order-single-details">
-                                <h4>Women Black Printed A-Line Top x2</h4>
-                                <p>Seller: Cliff Fashion, Ahmedabad</p>
-                                <p class="process-order-price">₹ 299</p>
-                              </div>
+                        <div class="process-coupon-applied-details-wrapper">
+                            <h6>Price Details</h6>
+                            <div class="process-coupon-applied-detail-item">
+                                <p>Product Price</p>
+                                <span>₹ 4,460</span>
                             </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="order-detail-list-wrapper">
-                      <div class="row order-item">
-                        <div class="col-md-6">
-                          <div class="order-single-detail-left">
-                            <div class="order-single-image-detail-wrapper">
-                              <div class="order-single-image">
-                                <img src="./assets/img/image 22.png" alt="" />
-                              </div>
-                              <div class="order-single-details">
-                                <h4>Women Black Printed A-Line Top x2</h4>
-                                <p>Seller: Cliff Fashion, Ahmedabad</p>
-                                <p class="process-order-price">₹ 299</p>
-                              </div>
+                            <div class="process-coupon-applied-detail-item">
+                                <p>Discount</p>
+                                <span class="text-red-color">₹ 460</span>
                             </div>
-                          </div>
+                            <div class="process-coupon-applied-detail-item">
+                                <p>Delivery Charges</p>
+                                <span class="text-green-color">Free</span>
+                            </div>
                         </div>
-                      </div>
+                        <div class="process-coupon-applied-footer">
+                            <h6>Amount Payable</h6>
+                            <span>₹ 3,568</span>
+                        </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="process-order-icon">
-              <div class="process-order-icon-left">
-                <div class="progressbar">
-                  <div class="step">
-                    <div class="bullet active">
-                      <div class="check bi bi-check2"></div>
-                    </div>
-
-                    <div class="process-order-icon-left-card">
-                      <div class="process-order-icon-left-card-inner">
-                        <div class="process-order-icon-left-img">
-                          <img src="./assets/img/received.svg" alt="" />
-                          <p>Ordered</p>
-                          <span>Jan 21, 2020, Sun</span>
-                                    </div>
+                    <div class="process-coupon-applied-wrapper">
+                        <div class="process-coupon-applied-header">
+                            <div class="process-coupon-applied-left">
+                                <div class="process-coupon-applied-img-wrapper">
+                                    <img src="./assets/img/offer.svg" alt="" />
                                 </div>
+                                <p>Offers</p>
                             </div>
-                        </div>
-                        <div class="step">
-                            <div class="bullet"></div>
 
-                            <div class="process-order-icon-left-card">
-                                <div class="process-order-icon-left-card-inner">
-                                    <div class="process-order-icon-left-img">
-                                        <img src="./assets/img/logistics.svg" alt="" />
-                                        <p>Packed</p>
-                                        <span>Jan 23, 2020, Sun</span>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
-                        <div class="step">
-                            <div class="bullet"></div>
+                        <div class="order-process-offer-detail">
+                            <h6>5% Unlimited Cashback on payments using HDFC Credit Card
+                            </h6> <a href="">T&C</a>
 
-                            <div class="process-order-icon-left-card">
-                                <div class="process-order-icon-left-card-inner">
-                                    <div class="process-order-icon-left-img">
-                                        <img src="./assets/img/pickup-truck.svg" alt="" />
-                                        <p>Packed</p>
-                                        <span>Jan 25, 2020, Sun</span>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
-                        <div class="step">
-                            <div class="bullet"></div>
 
-                            <div class="process-order-icon-left-card">
-                                <div class="process-order-icon-left-card-inner">
-                                    <div class="process-order-icon-left-img">
-                                        <img src="./assets/img/shopping-bag.svg" alt="" />
-                                        <p>Delivered</p>
-                                        <span>Jan 27, 2020, Sun</span>
-                                    </div>
-                                </div>
-                            </div>
+
+                    </div>
+
+                    <div class="process-order-secure-wrapper">
+                        <div class="process-order-secure-wrapper-wrapper">
+                            <img src="./assets/img/secure.svg" alt="" />
                         </div>
+                        <h6>5% Unlimited Cashback on payments using HDFC Credit Card
+                        </h6>
                     </div>
-                </div>
-                <div class="process-order-icon-right">
-                    <p>
-                        <i class="bi bi-star-fill me-1"></i> RATE & REVIEW PRODUCT
-                    </p>
-                    <p><i class="bi bi-question-circle me-1"></i> NEED HELP?</p>
-                    <a href="" class="btn">Cancel Order Request</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3">
-            <div class="process-coupon-applied-wrapper">
-                <div class="process-coupon-applied-header">
-                    <div class="process-coupon-applied-left">
-                        <div class="process-coupon-applied-img-wrapper">
-                            <img src="./assets/img/coupon.svg" alt="" />
-                        </div>
-                        <p>Coupon Applied: <span>EXTRA20</span></p>
-                    </div>
-                    <div class="process-coupon-applied-right">
-                        <div class="process-coupon-applied-right-image">
-                            <img src="./assets/img/tick.svg" alt="" />
-                        </div>
-                    </div>
-                </div>
-                <div class="process-coupon-applied-details-wrapper">
-                    <h6>Price Details</h6>
-                    <div class="process-coupon-applied-detail-item">
-                        <p>Product Price</p>
-                        <span>₹ 4,460</span>
-                    </div>
-                    <div class="process-coupon-applied-detail-item">
-                        <p>Discount</p>
-                        <span class="text-red-color">₹ 460</span>
-                    </div>
-                </div>
-                <div class="process-coupon-applied-footer">
-                    <h6>Amount Payable</h6>
-                    <span>₹ 3,568</span>
                 </div>
             </div>
         </div>
     </div>
-    </div>
-    </div>
+
+
+
+
 
     <!-- footer start -->
     <section class="footer-wrapper">
@@ -779,7 +718,7 @@
                     <div class="col-md-4">
                         <div class="logo-content-wrapper">
                             <a href=" " class="logo-wrapper">
-                                <img src="./assets/img/nerozon web.png" alt=" " />
+                                <img src="./assets/img/nerozon web.png " alt=" " />
                             </a>
                             <p class="text-generic">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere fuga fugiat molestias tempore optio ratione illum doloribus assumenda ducimus, vitae libero
