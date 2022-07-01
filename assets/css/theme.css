@@ -2274,7 +2274,7 @@
 }
 
 .top-deal-split-section-wrapper {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   padding: 30px 0;
 }
 .top-deal-split-section-wrapper .top-deal-split-section-inner-wrapper .top-deal-split-section-left-wrapper {
@@ -2343,7 +2343,7 @@
   }
 }
 .fashion-product-section-wrapper {
-  background: #E5E5E5;
+  background: #e5e5e5;
   padding: 30px 0;
 }
 .fashion-product-section-wrapper .fashion-product-section-inner {
@@ -2409,7 +2409,7 @@
 }
 
 .women-fashion-product-section-wrapper {
-  background: #E5E5E5;
+  background: #e5e5e5;
   padding: 30px 0;
 }
 .women-fashion-product-section-wrapper .women-fashion-product-section-inner {
@@ -2475,7 +2475,7 @@
 }
 
 .men-fashion-product-section-wrapper {
-  background: #E5E5E5;
+  background: #e5e5e5;
   padding: 30px 0;
 }
 .men-fashion-product-section-wrapper .men-fashion-product-section-inner {
@@ -2541,7 +2541,7 @@
 }
 
 .home-product-section-wrapper {
-  background: #E5E5E5;
+  background: #e5e5e5;
   padding: 30px 0;
 }
 .home-product-section-wrapper .home-product-section-inner {
@@ -2607,7 +2607,7 @@
 }
 
 .fashion-2-product-section-wrapper {
-  background: #E5E5E5;
+  background: #e5e5e5;
   padding: 30px 0;
 }
 .fashion-2-product-section-wrapper .fashion-2-product-section-inner {
@@ -2673,7 +2673,7 @@
 }
 
 .fashion-3-product-section-wrapper {
-  background: #E5E5E5;
+  background: #e5e5e5;
   padding: 30px 0;
 }
 .fashion-3-product-section-wrapper .fashion-3-product-section-inner {
@@ -2739,14 +2739,18 @@
 }
 
 .product-banners-wrapper {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
+  padding-bottom: 30px;
 }
 .product-banners-wrapper .product-banners-inner-wrapper .product-banner-content-wrapper {
+  margin: 10px 0;
   width: 100%;
-  height: 100%;
+  overflow: hidden;
 }
 .product-banners-wrapper .product-banners-inner-wrapper .product-banner-content-wrapper img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media screen and (max-width: 992px) {
@@ -2832,6 +2836,12 @@
 
   .home-product-section-wrapper .home-product-section-inner .home-product-topbar h6 {
     margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .offer-product-display-wrapper .offer-product-detail-wrapper,
+.offer-product-display-wrapper .offer-single-product-wrapper {
+    border-right: none;
   }
 }
 /* footer */
