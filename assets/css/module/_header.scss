@@ -37,7 +37,7 @@
                      margin: 0!important;
                  }
                  .form-control {
-                     width: 400px;
+                     width: 500px;
                  }
                  .btn {
                      background-color: $brand-orange;
@@ -133,12 +133,17 @@
              text-decoration: none;
              font-size: 12px;
              font-weight: 500;
-             padding: 9px 15px;
-             border-radius: 5px;
+             padding: 9px 17px;
+             border-radius: 0;
              transition: all 0.3s ease;
+             -webkit-border-radius: 0;
+             -moz-border-radius: 0;
+             -ms-border-radius: 0;
+             -o-border-radius: 0;
          }
          .nav-links li a:hover {
-             background: $text-blue;
+             background: white;
+             background-color: $brand-green;
          }
          .nav-links .mobile-item {
              display: none;
@@ -177,16 +182,17 @@
              z-index: 99;
          }
          .mega-box .content {
-             background: $text-blue-v2;
+             background: white;
              padding: 25px 20px;
              display: flex;
              width: 100%;
              justify-content: space-between;
              box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+             align-items: flex-start;
          }
          .mega-box .content .row {
              width: calc(25% - 30px);
-             line-height: 45px;
+             line-height: 25px;
          }
          .content .row img {
              width: 100%;
@@ -195,25 +201,33 @@
          }
          .content .row header {
              color: #f2f2f2;
-             font-size: 20px;
-             font-weight: 500;
+             font-size: 14px;
+             font-weight: 600;
+             color: black;
          }
          .content .row .mega-links {
              margin-left: -40px;
              border-left: 1px solid rgba(255, 255, 255, 0.09);
          }
          .row .mega-links li {
-             padding: 0 20px;
+             padding: 0 0 0 20px;
          }
          .row .mega-links li a {
              padding: 0px;
-             padding: 0 20px;
+             padding: 0 0 0 20px;
              color: #d9d9d9;
-             font-size: 17px;
+             font-size: 14px;
              display: block;
+             color: #4C6C8D;
          }
          .row .mega-links li a:hover {
-             color: #f2f2f2;
+             padding: 0px;
+             padding: 0 0 0 20px;
+             color: #d9d9d9;
+             font-size: 14px;
+             display: block;
+             color: #4C6C8D;
+             background-color: unset;
          }
          .wrapper .btn {
              color: #fff;
@@ -373,7 +387,7 @@
      display: flex;
      span {
          font-size: 14px;
-         padding-left: 50px;
+         padding-left: 17px;
      }
      .quick-link-list {
          display: flex;
@@ -386,7 +400,7 @@
          }
          li {
              border-right: 1px solid black;
-             padding: 0px 20px;
+             padding: 0px 22px;
              a {
                  font-size: 12px;
                  font-weight: 500;
@@ -406,6 +420,9 @@
  @media screen and (max-width: 1130px) {
      .bottom-header-wrapper {
          display: none;
+     }
+     #header .logo-action-header-inner .actions-wrapper .navbar-search .form-control {
+         width: 300px;
      }
  }
  
