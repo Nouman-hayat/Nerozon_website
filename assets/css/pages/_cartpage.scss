@@ -1,0 +1,60 @@
+.main-website-cart-wrapper {
+  .order-process-tab {
+    padding: 0;
+  }
+  .order-single-detail-wrapper
+    .order-single-detail-inner-wrapper
+    .order-single-detail-left
+    .order-single-image-detail-wrapper
+    .order-single-details
+    .process-order-price {
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+    .order-discountprice {
+      font-size: 12px;
+      font-weight: 400;
+      margin-left: 5px;
+    }
+    .offer-discountprice {
+      font-size: 12px;
+      font-weight: 400;
+      margin-left: 5px;
+      color: $brand-green;
+    }
+  }
+  .order-single-detail-wrapper
+    .order-single-detail-inner-wrapper
+    .order-single-detail-left
+    .order-single-image-detail-wrapper
+    .order-single-details
+    h4 {
+    margin-bottom: 3px;
+  }
+  .order-single-detail-wrapper
+    .order-single-detail-inner-wrapper
+    .order-single-detail-left
+    .order-single-image-detail-wrapper
+    .order-single-image {
+    width: 80px;
+  }
+
+  .cart-confirm-info {
+    p {
+      font-weight: 600;
+      font-size: 12px;
+      color: #97a6b1;
+    }
+    .btn {
+      background-color: $brand-orange;
+      color: white;
+      width: 250px;
+    }
+  }
+  .process-coupon-applied-wrapper {
+    margin-top: 20px;
+  }
+//    .row  .col-lg-3{
+// order: -1;
+//   }
+}

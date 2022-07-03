@@ -1,36 +1,41 @@
+@import "./module/_variable";
 // generic
-@import './module/generic';
+@import "./module/generic";
 // generic
 // header
-@import './module/header';
+@import "./module/header";
 // header
 // index
-@import './pages/index';
+@import "./pages/index";
 // index
 // myorders
-@import './pages/myorders';
+@import "./pages/myorders";
 // myorders
+// cartpage
+@import "./pages/cartpage";
+// cartpage
+@import "./pages/sellerproduct";
 // profileinformation
-@import './pages/profileinformation';
+@import "./pages/profileinformation";
 // profileinformation
 //savedaddress
-@import './pages/savedaddress';
+@import "./pages/savedaddress";
 //savedaddress
 //wallet
-@import './pages/wallet';
+@import "./pages/wallet";
 //wallet
 //orderprocess
-@import './pages/orderprocess';
+@import "./pages/orderprocess";
 // orderprocess
 //popreturnorder
-@import './pages/popreturnorder';
+@import "./pages/popreturnorder";
 //popreturnorder
 // orderprocestabs
-@import './pages/orderprocestabs';
+@import "./pages/orderprocestabs";
 // orderprocestabs
 //homes_1
-@import './pages/homes_1';
+@import "./pages/homes_1";
 //homes_1
 // footer
-@import './module/footer';
+@import "./module/footer";
 // footer

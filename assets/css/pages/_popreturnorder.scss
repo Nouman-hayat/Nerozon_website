@@ -1,220 +1,225 @@
 .order-process-overlay-inner-wrapper {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    background-color: #544D5E;
-    opacity: 0.9;
-    z-index: 9999;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: #544d5e;
+  opacity: 0.9;
+  z-index: 9999;
 }
 
 .order-process-overlay-content {
+  position: absolute;
+  width: 70%;
+  padding: 30px;
+  opacity: unset;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  background-color: white;
+  z-index: 999999;
+  -webkit-transform: translate(-50%, 0%);
+  -moz-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  -o-transform: translate(-50%, 0%);
+  h3 {
+    color: $brand-orange;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+  h6 {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .form-number-input {
+    position: relative;
+    .form-number {
+      padding-left: 50px;
+    }
+  }
+  .form-inner-code {
     position: absolute;
-    width: 500px;
-    padding: 30px;
-    opacity: unset;
-    top: 5%;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    background-color: white;
-    z-index: 999999;
-    -webkit-transform: translate(-50%, 0%);
-    -moz-transform: translate(-50%, 0%);
-    -ms-transform: translate(-50%, 0%);
-    -o-transform: translate(-50%, 0%);
-    h3 {
-        color: $brand-orange;
-        text-align: center;
-        margin-bottom: 30px;
-        font-size: 20px;
+    left: 2%;
+    top: 15%;
+  }
+  .orderprocess-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .btn {
+      color: white;
+      background-color: $brand-orange;
+      padding: 8px 30px;
     }
-    h6 {
-        font-size: 13px;
-        font-weight: 600;
+  }
+  .form-label {
+    font-size: 12px;
+    color: rgba(0, 36, 72, 0.6);
+    font-weight: 500;
+  }
+  .form-control {
+    font-size: 13px;
+    font-weight: 600;
+    background-color: rgba(237, 243, 226, 0.2);
+  }
+  .return-close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+  }
+  .order-process-cancel-order {
+    .order-single-detail-wrapper
+      .order-single-detail-inner-wrapper
+      .order-single-detail-left
+      .order-single-image-detail-wrapper
+      .order-single-details
+      h4 {
+      font-size: 13px;
     }
-    .form-number-input {
-        position: relative;
-        .form-number {
-            padding-left: 50px;
-        }
+    .order-single-detail-wrapper .order-single-detail-inner-wrapper {
+      padding: 15px 0;
     }
-    .form-inner-code {
-        position: absolute;
-        left: 2%;
-        top: 15%;
+    .order-item {
+      border-top: 1px solid #e4e4e4;
+      padding: 20px 0;
     }
-    .orderprocess-btn {
+    .custom-border-none {
+      border-top: none;
+    }
+    .cancel-order-footer {
+      display: flex;
+      border-top: 1px solid #c7c7c7;
+      justify-content: space-between;
+      padding: 20px 0;
+      h6,
+      p {
+        margin: 0;
+        font-size: 15px;
+        font-weight: 700;
+      }
+    }
+  }
+  .cancel-order-reason {
+    .form-control,
+    .form-select {
+      background-color: rgba(237, 243, 226, 0.2);
+      font-size: 13px;
+      font-weight: 600;
+    }
+  }
+  .return-order-address {
+    .return-order-address-header {
+      display: flex;
+      justify-content: space-between;
+      h6 {
+        margin-bottom: 0;
+        margin-right: 50px;
+        font-size: 14px;
+      }
+      a {
+        color: $brand-green;
+        font-size: 14px;
+        text-decoration: none;
+      }
+    }
+    .saved-address-item-wrapper {
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      -o-border-radius: 10;
+      background-color: white;
+      .item-header {
         display: flex;
+        margin-bottom: 5px;
         align-items: center;
-        justify-content: center;
-        .btn {
-            color: white;
-            background-color: $brand-orange;
-            padding: 8px 30px;
+        h6 {
+          margin-bottom: 0;
+          margin-right: 50px;
+          font-size: 14px;
         }
-    }
-    .form-label {
+        span {
+          background-color: rgb(228, 228, 228);
+          color: black;
+          padding: 5px 10px;
+          font-size: 12px;
+        }
+      }
+      p {
         font-size: 12px;
-        color: rgba(0, 36, 72, 0.6);
-        font-weight: 500;
+        color: $text-light-grey;
+        width: 250px;
+      }
     }
-    .form-control {
-        font-size: 13px;
-        font-weight: 600;
-        background-color: rgba(237, 243, 226, 0.2);
+  }
+  .select-wallet-return {
+    .wallet-return-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      label {
+        h6 {
+          color: black;
+          font-size: 15px;
+          display: inline;
+          margin-bottom: 0;
+          margin-right: 20px;
+        }
+        i {
+          color: red;
+          margin-bottom: 5px;
+          font-size: 15px;
+        }
+        p {
+          color: #4c6c8d;
+          font-size: 11px;
+          margin-bottom: 0px;
+        }
+      }
+      .form-check-input:checked {
+        background-color: $brand-green;
+        border-color: $brand-green;
+      }
     }
-    .return-close-btn {
-        position: absolute;
-        right: 20px;
-        top: 20px;
-        cursor: pointer;
-    }
-    .order-process-cancel-order {
-        .order-single-detail-wrapper .order-single-detail-inner-wrapper .order-single-detail-left .order-single-image-detail-wrapper .order-single-details h4 {
-            font-size: 13px;
-        }
-        .order-single-detail-wrapper .order-single-detail-inner-wrapper {
-            padding: 15px 0;
-        }
-        .order-item {
-            border-top: 1px solid #e4e4e4;
-            padding: 20px 0;
-        }
-        .custom-border-none {
-            border-top: none;
-        }
-        .cancel-order-footer {
-            display: flex;
-            border-top: 1px solid #c7c7c7;
-            justify-content: space-between;
-            padding: 20px 0;
-            h6,
-            p {
-                margin: 0;
-                font-size: 15px;
-                font-weight: 700;
-            }
-        }
-    }
-    .cancel-order-reason {
-        .form-control,
-        .form-select {
-            background-color: rgba(237, 243, 226, 0.2);
-            font-size: 13px;
-            font-weight: 600;
-        }
-    }
-    .return-order-address {
-        .return-order-address-header {
-            display: flex;
-            justify-content: space-between;
-            h6 {
-                margin-bottom: 0;
-                margin-right: 50px;
-                font-size: 14px;
-            }
-            a {
-                color: $brand-green;
-                font-size: 14px;
-                text-decoration: none;
-            }
-        }
-        .saved-address-item-wrapper {
-            border-radius: 10px;
-            -webkit-border-radius: 10px;
-            -moz-border-radius: 10px;
-            -ms-border-radius: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            -o-border-radius: 10;
-            background-color: white;
-            .item-header {
-                display: flex;
-                margin-bottom: 5px;
-                align-items: center;
-                h6 {
-                    margin-bottom: 0;
-                    margin-right: 50px;
-                    font-size: 14px;
-                }
-                span {
-                    background-color: rgb(228, 228, 228);
-                    color: black;
-                    padding: 5px 10px;
-                    font-size: 12px;
-                }
-            }
-            p {
-                font-size: 12px;
-                color: $text-light-grey;
-                width: 250px;
-            }
-        }
-    }
-    .select-wallet-return {
-        .wallet-return-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            label {
-                h6 {
-                    color: black;
-                    font-size: 15px;
-                    display: inline;
-                    margin-bottom: 0;
-                    margin-right: 20px;
-                }
-                i {
-                    color: red;
-                    margin-bottom: 5px;
-                    font-size: 15px;
-                }
-                p {
-                    color: #4C6C8D;
-                    font-size: 11px;
-                    margin-bottom: 0px;
-                }
-            }
-            .form-check-input:checked {
-                background-color: $brand-green;
-                border-color: $brand-green;
-            }
-        }
-    }
+  }
 }
 
 .return-payment-wrapper {
-    .return-payment-image {
-        display: flex;
-        justify-content: center;
-        .return-payment-image-inner {
-            width: 150px;
-            img {
-                width: 100%;
-            }
-        }
+  .return-payment-image {
+    display: flex;
+    justify-content: center;
+    .return-payment-image-inner {
+      width: 150px;
+      img {
+        width: 100%;
+      }
     }
-    p {
-        font-size: 13px;
-        color: #4C6C8D;
-        text-align: center;
-        margin-top: 10px;
-    }
+  }
+  p {
+    font-size: 13px;
+    color: #4c6c8d;
+    text-align: center;
+    margin-top: 10px;
+  }
 }
 
 @media screen and (max-width: 850px) {
-    .order-process-overlay-content .orderlist-detail {
-        width: unset;
-    }
-    .order-single-detail-wrapper {
-        overflow: unset;
-    }
+  .order-process-overlay-content .orderlist-detail {
+    width: unset;
+  }
+  .order-single-detail-wrapper {
+    overflow: unset;
+  }
 }
 
 @media screen and (max-width: 575px) {
-    .order-process-overlay-content {
-        width: 95%;
-        padding: 15px;
-    }
+  .order-process-overlay-content {
+    width: 95%;
+    padding: 15px;
+  }
 }

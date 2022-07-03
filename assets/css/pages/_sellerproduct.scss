@@ -1,0 +1,183 @@
+.product-seller-wrapper {
+  background-color: #f2f2f2;
+  padding: 30px 0;
+  .product-seller-item {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    .product-seller-item-details {
+      display: flex;
+      align-items: center;
+      .product-seller-image-wrapper {
+        width: 60px;
+        img {
+          width: 100%;
+        }
+      }
+      .product-seller-description {
+        h6 {
+          font-size: 13px;
+          font-weight: 600;
+          margin-bottom: 0;
+        }
+        p {
+          font-size: 13px;
+          display: inline;
+          margin-bottom: 0;
+        }
+
+        .seller-rating {
+          color: white;
+          background-color: $brand-green;
+          display: inline;
+          padding: 3px 10px;
+        }
+        .seller-order {
+          color: #97a6b1;
+        }
+      }
+    }
+  }
+  .all-seller-item {
+    margin-top: 5px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    a {
+      color: black;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  }
+  .product-table-seller-detail-wrapper {
+    ul {
+      li {
+        font-size: 12px;
+      }
+    }
+    .product-table-seller-detail-topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      p {
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+      .seller-rating {
+        padding: 5px 10px;
+        color: white;
+        margin-left: 20px;
+        font-size: 11px;
+        background-color: $brand-green;
+      }
+    }
+  }
+  .seller-product-table-price-wrapper {
+    p {
+      margin-bottom: 0;
+      display: inline;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .seller-discount {
+      text-decoration: line-through;
+      color: $brand-red;
+      font-weight: 300;
+      margin-left: 5px;
+      font-size: 12px;
+    }
+    .seller-offer {
+      color: $brand-green;
+      font-weight: 300;
+      margin-left: 2px;
+      font-size: 12px;
+    }
+  }
+  .seller-product-shipment {
+    h6 {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+    p {
+      font-size: 12px;
+      font-weight: 200;
+      margin-bottom: 5px;
+    }
+  }
+  .seller-product-btn {
+    .btn {
+      color: $brand-orange;
+      border-color: $brand-orange;
+    }
+    .orange-btn {
+      background-color: $brand-orange;
+      color: white;
+      width: 200px;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+  }
+  .product-seller-table-wrapper {
+    margin-top: 5px;
+    table thead tr td {
+      padding: 10px 20px;
+      margin-top: 20px;
+      font-size: 15px;
+      font-weight: 600;
+    }
+    table {
+      background-color: white;
+      width: 100%;
+      thead tr {
+        background-color: white;
+      }
+      tbody {
+        tr {
+          background-color: white;
+          td {
+            padding: 10px 20px;
+            margin-top: 20px;
+            font-size: 15px;
+            border-bottom: 1px solid rgb(230, 230, 230);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .product-seller-wrapper .product-seller-table-wrapper {
+    overflow-x: scroll;
+    width: 100%;
+  }
+  .product-seller-wrapper .product-seller-table-wrapper table {
+    width: 1130px;
+  }
+
+  .product-seller-table-wrapper::-webkit-scrollbar {
+    width: 2px;
+  }
+  .product-seller-table-wrapper::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px rgba(175, 175, 175, 0.3);
+  }
+  .product-seller-table-wrapper::-webkit-scrollbar-thumb {
+    background-color: rgb(165, 165, 165);
+    outline: 1px solid rgb(172, 172, 172);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+  }
+}

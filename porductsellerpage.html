@@ -83,6 +83,47 @@
                       </div>
                     </div>
                   </form>
+                  <ul class="navbar-search-history">
+                    <li>
+                      <div class="item-icon-search-history">
+                        <div class="search-history-image-wrapper">
+                          <img src="./assets/img/headphone.png" alt="" />
+                        </div>
+                        <div class="search-history-description">
+                          <h6>Bluetooth <span>earphones</span></h6>
+                          <p>In headohines & Speakers</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="item-icon-search-history">
+                        <div class="search-history-image-wrapper">
+                          <img
+                            src="./assets/img/search.png"
+                            class="search-history-icon"
+                            alt=""
+                          />
+                        </div>
+                        <div class="search-history-description">
+                          <h6>Bluetooth <span>earphones</span></h6>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="item-icon-search-history">
+                        <div class="search-history-image-wrapper">
+                          <img
+                            src="./assets/img/search.png"
+                            class="search-history-icon"
+                            alt=""
+                          />
+                        </div>
+                        <div class="search-history-description">
+                          <h6>Bluetooth <span>headphone</span></h6>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
                 <div class="navbar-cart-wrapper px-2">
                   <a href="" class="btn">
@@ -104,7 +145,7 @@
                   </a>
                 </div>
                 <div class="navbar-login-btn ps-2">
-                  <p class="btn m-0"> Sign in/Sign up</p>
+                  <p class="btn m-0">Sign in/Sign up</p>
                 </div>
               </div>
             </div>
@@ -1797,62 +1838,403 @@
       </div>
     </div>
 
-    <div id="user-dashboard-home">
-      <div class="user-dashboard-home-inner-wrapper">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-2">
-              <div class="user-dashboard-home-menu">
-                <ul class="list-group">
-                  <li class="list-group-item"><a href="#">My Account</a></li>
-                  <li class="list-group-item"><a href="#">Saved Address</a></li>
-                  <li class="list-group-item"><a href="#">My Wishlist</a></li>
-                  <li class="list-group-item"><a href="#">My Order</a></li>
-                  <li class="list-group-item active-list">
-                    <a href="#">My Wallet</a>
-                  </li>
-                  <li class="list-group-item"><a href="#">Setting</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-10">
-              <div class="wallet-wapper">
-                <p>Your wallet Balance: <span>₹ 50</span></p>
-              </div>
-
-              <div class="wallet-history-wrapper mt-4">
-                <div class="saved-address-wrapper">
-                  <h5>Recent Activity</h5>
-                  <div class="saved-address-item-wrapper my-2">
-                    <div class="saved-address-left">
-                      <div class="item-header">
-                        <h6>Jan 21, 2020</h6>
-                      </div>
-                      <p>Cashback Order: 13324</p>
-                    </div>
-                    <div class="saved-address-right">
-                      <span class="text-green-color">- ₹ 50</span>
-                    </div>
-                  </div>
-                  <div class="saved-address-item-wrapper my-2">
-                    <div class="saved-address-left">
-                      <div class="item-header">
-                        <h6>Jan 21, 2020</h6>
-                      </div>
-                      <p>Cashback Order: 13324</p>
-                    </div>
-                    <div class="saved-address-right">
-                      <span class="text-red-color">- ₹ 50</span>
+    <div class="login-signup-overlay-wrappper">
+      <div class="login-signup-overlay-inner"></div>
+      <div class="login-signup-overlay-content-wrapper">
+        <div class="login-signup-content-inner-wrapper">
+          <div class="login-content-wrapper">
+            <div class="row">
+              <div class="col-md-5">
+                <div class="overlay-left-content">
+                  <h5>Signin</h5>
+                  <p>Enter your credentials to log into your account.</p>
+                  <div class="overlay-image-wrapper">
+                    <div class="overlay-image-inner">
+                      <img src="./assets/img/login image.svg" alt="" />
                     </div>
                   </div>
                 </div>
               </div>
+              <div class="col-md-7">
+                <div class="overlay-right-content">
+                  <div class="mb-4">
+                    <div class="form-input">
+                      <label class="form-label"> Mobile Number</label>
+                      <div class="form-number-input">
+                        <input
+                          type="tel"
+                          class="form-control form-number"
+                          maxlength="10"
+                          required
+                        />
+                        <label for="" class="form-inner-code">+91 | </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <label class="form-label">Password</label>
+                    <input type="password" class="form-control" />
+                    <p class="forgot-password">Forget password</p>
+                  </div>
+                  <button class="btn orange-btn">Sign in</button>
+                  <p>OR</p>
+                  <button class="btn transparent-btn">
+                    <div class="btn-image-wraper">
+                      <img src="./assets/img/google btn.svg" alt="" />
+                    </div>
+                    Sign in with Google
+                  </button>
+
+                  <button class="btn fb-btn">
+                    <div class="btn-image-wraper">
+                      <img src="./assets/img/fb btn.png" alt="" />
+                    </div>
+                    Sign in with Facebook
+                  </button>
+                  <button class="btn otp-btn">Request OTP</button>
+                  <p class="mt-2">
+                    New to GoldenZon?
+                    <span class="sign-in-btn">Create an account</span>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
+          <div class="forgotpass-content-wrapper">
+            <div class="row">
+              <div class="col-md-5">
+                <div class="overlay-left-content">
+                  <h5>Forgot Password</h5>
+                  <p>
+                    Please provide your registered Mobile number. Get started
+                    into GoldenZon.
+                  </p>
+                  <div class="overlay-image-wrapper">
+                    <div class="overlay-image-inner">
+                      <img src="./assets/img/login image.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="overlay-right-content">
+                  <div class="mb-4">
+                    <div class="form-input">
+                      <label class="form-label"> Mobile Number</label>
+                      <div class="form-number-input">
+                        <input
+                          type="tel"
+                          class="form-control form-number"
+                          value="776676776799"
+                          maxlength="10"
+                          required
+                        />
+                        <label for="" class="form-inner-code">+91 | </label>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn orange-btn">Get OTP</button>
+                  <p>Existing User? <span class="sign-in-btn">Sign In</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="register-content-wrapper">
+            <div class="row">
+              <div class="col-md-5">
+                <div class="overlay-left-content">
+                  <h5>Register</h5>
+                  <p>
+                    Register with your Mobile Number to get started into
+                    GoldenZon
+                  </p>
+                  <div class="overlay-image-wrapper">
+                    <div class="overlay-image-inner">
+                      <img src="./assets/img/login image.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="overlay-right-content">
+                  <div class="mb-4">
+                    <div class="form-input">
+                      <label class="form-label"> Mobile Number</label>
+                      <div class="form-number-input">
+                        <input
+                          type="tel"
+                          class="form-control form-number"
+                          value="776676776799"
+                          maxlength="10"
+                          required
+                        />
+                        <label for="" class="form-inner-code">+91 | </label>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn orange-btn">Get OTP</button>
+                  <p>Existing User? <span class="sign-in-btn">Sign In</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="register-2-content-wrapper">
+            <div class="row">
+              <div class="col-md-5">
+                <div class="overlay-left-content">
+                  <h5>Register</h5>
+                  <p>
+                    Register with your Mobile Number to get started into
+                    GoldenZon
+                  </p>
+                  <div class="overlay-image-wrapper">
+                    <div class="overlay-image-inner">
+                      <img src="./assets/img/login image.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="overlay-right-content">
+                  <div class="mb-4">
+                    <div class="form-input">
+                      <label class="form-label"> Mobile Number</label>
+                      <div class="form-number-input">
+                        <input
+                          type="tel"
+                          class="form-control form-number"
+                          maxlength="10"
+                          required
+                        />
+                        <label for="" class="form-inner-code">+91 | </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <label class="form-label">Enter OTP</label>
+                    <input type="number" class="form-control" />
+                  </div>
+                  <div class="mb-4">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                  <div class="mb-4">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" />
+                  </div>
+                  <div class="mb-4">
+                    <label class="form-label">New Password</label>
+                    <input type="password" class="form-control" />
+                  </div>
+                  <div class="mb-4">
+                    <label class="form-label">Confirm New Password</label>
+                    <input type="password" class="form-control" />
+                  </div>
+                  <button class="btn orange-btn">Sign up</button>
+                  <p>OR</p>
+                  <button class="btn transparent-btn">
+                    <div class="btn-image-wraper">
+                      <img src="./assets/img/google btn.svg" alt="" />
+                    </div>
+                    Sign in with Google
+                  </button>
+
+                  <button class="btn fb-btn">
+                    <div class="btn-image-wraper">
+                      <img src="./assets/img/fb btn.png" alt="" />
+                    </div>
+                    Sign in with Facebook
+                  </button>
+                  <button class="btn otp-btn">Request OTP</button>
+                  <p class="mt-2">
+                    Existing User? <span class="sign-in-btn">Sign in</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="forgotpass-2-content-wrapper">
+            <div class="row">
+              <div class="col-md-5">
+                <div class="overlay-left-content">
+                  <h5>Forgot Password</h5>
+                  <p>
+                    Please provide your registered Mobile number.Get started
+                    into GoldenZon.
+                  </p>
+                  <div class="overlay-image-wrapper">
+                    <div class="overlay-image-inner">
+                      <img src="./assets/img/login image.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="overlay-right-content">
+                  <div class="mb-4">
+                    <div class="form-input">
+                      <label class="form-label"> Mobile Number</label>
+                      <div class="form-number-input">
+                        <input
+                          type="tel"
+                          class="form-control form-number"
+                          maxlength="10"
+                          required
+                        />
+                        <label for="" class="form-inner-code">+91 | </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <label class="form-label">Enter OTP</label>
+                    <input type="number" class="form-control" />
+                  </div>
+                  <div class="mb-4">
+                    <label class="form-label">New Password</label>
+                    <input type="password" class="form-control" />
+                  </div>
+                  <div class="mb-4">
+                    <label class="form-label">Confirm New Password</label>
+                    <input type="password" class="form-control" />
+                  </div>
+                  <button class="btn orange-btn">Sign in</button>
+
+                  <p class="mt-2">
+                    Existing User? <span class="sign-in-btn">Sign In</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <i class="bi bi-x-lg login-close-btn"></i>
         </div>
       </div>
     </div>
 
+    <div class="product-seller-wrapper">
+      <div class="container">
+        <div class="product-seller-inner-wrapper">
+          <div class="product-seller-item">
+            <div class="product-seller-item-details">
+              <div class="product-seller-image-wrapper">
+                <img src="./assets/img/ph.png" alt="" />
+              </div>
+              <div class="product-seller-description">
+                <h6>Apple iPhone 11(Red, 32 GB)</h6>
+                <p class="seller-address">Seller Cliff Fashion, Ahmedabad</p>
+                <p class="seller-rating">4.9<i class="bi bi-star-fill"></i></p>
+                <p class="seller-order">(113)</p>
+              </div>
+            </div>
+          </div>
+          <div class="all-seller-item">
+            <a href=""> <p>All Seller</p> </a>
+          </div>
+          <div class="product-seller-table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <td>Seller</td>
+                  <td>Price</td>
+                  <td>Delivery</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="product-table-seller-detail-wrapper">
+                      <div class="product-table-seller-detail-topbar">
+                        <p>Astronet Corse Pvt. Ltd, Noida</p>
+                        <p class="seller-rating">
+                          4.9<i class="bi bi-star-fill ms-1"></i>
+                        </p>
+                       
+                      </div>
+                       <ul>
+                          <li>Cash On Delivery available</li>
+                          <li>30 Days Return Policy</li>
+                        </ul>
+                    </div>
+                  </td>
+                  <td>
+                   <div class="seller-product-table-price-wrapper">
+                     <p>
+                        ₹ 12,990
+                        <p class="seller-discount">
+                            ₹ 15,990
+                        </p>
+                        <p class="seller-offer">
+                            8% Off
+                        </p>
+                    </p>
+                   </div>
+                  </td>
+                  <td>
+                    <div class="seller-product-shipment">
+                        <h6>
+                               Free Delivery by 28 Jun,
+                        </h6>
+                        <p>Usually deliver in 3-4 days</p>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="seller-product-btn">
+                        <a href="" class="btn"><i class="bi bi-cart-plus"></i></a>
+                        <a href="" class="btn orange-btn"> Buy Now</a>
+                    </div>
+                  </td>
+                </tr>
+
+                 <tr>
+                  <td>
+                    <div class="product-table-seller-detail-wrapper">
+                      <div class="product-table-seller-detail-topbar">
+                        <p>Astronet Corse Pvt. Ltd, Noida</p>
+                        <p class="seller-rating">
+                          4.9<i class="bi bi-star-fill ms-1"></i>
+                        </p>
+                       
+                      </div>
+                       <ul>
+                          <li>Cash On Delivery available</li>
+                          <li>30 Days Return Policy</li>
+                        </ul>
+                    </div>
+                  </td>
+                  <td>
+                   <div class="seller-product-table-price-wrapper">
+                     <p>
+                        ₹ 12,990
+                        <p class="seller-discount">
+                            ₹ 15,990
+                        </p>
+                        <p class="seller-offer">
+                            8% Off
+                        </p>
+                    </p>
+                   </div>
+                  </td>
+                  <td>
+                    <div class="seller-product-shipment">
+                        <h6>
+                               Free Delivery by 28 Jun,
+                        </h6>
+                        <p>Usually deliver in 3-4 days</p>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="seller-product-btn">
+                        <a href="" class="btn"><i class="bi bi-cart-plus"></i></a>
+                        <a href="" class="btn orange-btn"> Buy Now</a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- footer start -->
     <section class="footer-wrapper">
       <div class="footer-image">
