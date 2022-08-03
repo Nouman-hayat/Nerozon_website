@@ -4172,6 +4172,9 @@
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
+.filter-product-navigation .filter-product-navigation-inner .nav-index.active {
+  border: 1px solid black;
+}
 
 @media screen and (max-width: 575px) {
   .filter-product-navigation .previous-nav {

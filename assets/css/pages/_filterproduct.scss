@@ -656,6 +656,8 @@ width: 40%;
        -moz-border-radius: 5px;
        -ms-border-radius: 5px;
        -o-border-radius: 5px;
+}.nav-index.active{
+  border: 1px solid black;  
 }
     }
 }
