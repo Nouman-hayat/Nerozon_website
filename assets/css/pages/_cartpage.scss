@@ -54,7 +54,38 @@
   .process-coupon-applied-wrapper {
     margin-top: 20px;
   }
-//    .row  .col-lg-3{
-// order: -1;
-//   }
+  //    .row  .col-lg-3{
+  // order: -1;
+  //   }
+}
+
+.sizechart-overlay-inner {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: #544d5e;
+  opacity: 0.9;
+  z-index: 9999;
+}
+.sizechart-overlay-inner {
+  position: absolute;
+  width: 70%;
+  padding: 30px;
+  opacity: unset;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  background-color: white;
+  z-index: 999999;
+  -webkit-transform: translate(-50%, 0%);
+  -moz-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  -o-transform: translate(-50%, 0%);
+}
+.sizechart-overlay-content-inner {
+  width: 100%;
+  img {
+    width: 100%;
+  }
 }

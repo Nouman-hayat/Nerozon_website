@@ -3,6 +3,34 @@ $(document).ready(function () {
     window.location.replace("./orderprocess.html");
   });
 
+  $(".brand-list-more").click(function () {
+    $(".brand-list-hide").toggle();
+    $(this).toggle()
+})
+
+  $(".filtered-product-list-wrapper .filtered-product-top-header .filtered-product-top-header-left .form-check-label").click(function () {
+  $(this).addClass("active");
+})  
+  
+  $('.filter-fav').click(function () {
+
+    $(this).removeClass("bi-heart");
+    $(this).addClass("bi-heart-fill");
+     $(".filter-fav").click(function () {
+				$(this).addClass("bi-heart");
+       $(this).removeClass("bi-heart-fill");
+       window.location.reload()
+			});
+
+  })
+
+  $("#grid-view ,#vertical-view").click(function () {
+		$(".filtered-product-list-vertical").toggle();
+		$(".filtered-product-list-show-grid").toggle();
+	}); 
+
+  
+
   // login popup
   $(".navbar-login-btn p").click(function () {
     $(".login-signup-overlay-wrappper").toggle();
@@ -47,26 +75,164 @@ $(document).ready(function () {
   $(".navbar-search-history .search-history-description").click(function (e) {
     var searchword = $(this).find("h6").text();
     $(".navbar-search .form-control").val(searchword);
-  $(".navbar-search-history").hide();
+    $(".navbar-search-history").hide();
   });
 
-  $(".carousel-fashion").owlCarousel({
-    items: 1,
-    loop: true,
-    margin: 30,
-    dots: false,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      600: {
-        items: 2,
-      },
-      1000: {
-        items: 5,
-      },
-    },
-  });
+ 
+
+  $(".home-slider").owlCarousel({
+		items: 1,
+		loop: true,
+		margin: 30,
+		nav: true,
+		dots: false,
+		autoplay: true,
+		autoplayTimeout: 5000,
+		autoplayHoverPause: true,
+		responsive: {
+			0: {
+				items: 1,
+			},
+			600: {
+				items: 1,
+			},
+			1000: {
+				items: 1,
+			},
+		},
+	});
+
+
+  $(".home-slider-2").owlCarousel({
+		items: 1,
+		loop: true,
+		margin: 30,
+		
+		dots: false,
+		autoplay: true,
+		autoplayTimeout: 5000,
+		autoplayHoverPause: true,
+		responsive: {
+			0: {
+				items: 1,
+			},
+			600: {
+				items: 1,
+			},
+			1000: {
+				items: 1,
+			},
+		},
+	});
+
+
+  $(".hot-deals-slider").owlCarousel({
+		items: 1,
+		loop: true,
+		margin: 30,
+		nav: true,
+		dots: false,
+		autoplay: true,
+		autoplayTimeout: 5000,
+		autoplayHoverPause: true,
+		responsive: {
+			0: {
+				items: 1,
+			},
+			600: {
+				items: 4,
+			},
+			1000: {
+				items: 6,
+			},
+		},
+	});
+
+
+ $(".carousel-top-deal-1").owlCarousel({
+		items: 1,
+		loop: true,
+		margin: 30,
+		dots: false,
+		responsive: {
+			0: {
+				items: 1,
+			},
+			600: {
+				items: 3,
+			},
+			1000: {
+				items: 4,
+			},
+		},
+ });
+
+
+ var owl11 = $(".carousel-top-deal-1");
+ owl11.owlCarousel();
+ // Go to the next item
+ $(".topdeal1NextBtn").click(function () {
+		owl11.trigger("next.owl.carousel");
+ });
+ // Go to the previous item
+ $(".topdeal1PrevBtn").click(function () {
+		// With optional speed parameter
+		// Parameters has to be in square bracket '[]'
+		owl11.trigger("prev.owl.carousel", [300]);
+ });
+  
+
+ $(".carousel-top-deal-2").owlCarousel({
+		items: 1,
+		loop: true,
+		margin: 30,
+		dots: false,
+		responsive: {
+			0: {
+				items: 1,
+			},
+			600: {
+				items: 3,
+			},
+			1000: {
+				items: 4,
+			},
+		},
+ });
+
+
+ var owl12 = $(".carousel-top-deal-2");
+ owl12.owlCarousel();
+ // Go to the next item
+ $(".topdeal2NextBtn").click(function () {
+		owl12.trigger("next.owl.carousel");
+ });
+ // Go to the previous item
+ $(".topdeal2PrevBtn").click(function () {
+		// With optional speed parameter
+		// Parameters has to be in square bracket '[]'
+		owl12.trigger("prev.owl.carousel", [300]);
+ });
+  
+  
+ $(".carousel-fashion").owlCarousel({
+		items: 1,
+		loop: true,
+		margin: 30,
+		dots: false,
+		responsive: {
+			0: {
+				items: 1,
+			},
+			600: {
+				items: 2,
+			},
+			1000: {
+				items: 5,
+			},
+		},
+ });
+
 
   var owl = $(".carousel-fashion");
   owl.owlCarousel();
@@ -236,3 +402,38 @@ $(document).ready(function () {
     owl5.trigger("prev.owl.carousel", [300]);
   });
 });
+
+
+
+window.onload = function () {
+	slideOne();
+	slideTwo();
+};
+
+let sliderOne = document.getElementById("slider-1");
+let sliderTwo = document.getElementById("slider-2");
+let displayValOne = document.getElementById("range1");
+let displayValTwo = document.getElementById("range2");
+let minGap = 0;
+let sliderTrack = document.querySelector(".slider-track");
+let sliderMaxValue = document.getElementById("slider-1").max;
+
+function slideOne() {
+	if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
+		sliderOne.value = parseInt(sliderTwo.value) - minGap;
+	}
+	displayValOne.textContent = sliderOne.value;
+	fillColor();
+}
+function slideTwo() {
+	if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
+		sliderTwo.value = parseInt(sliderOne.value) + minGap;
+	}
+	displayValTwo.textContent = sliderTwo.value;
+	fillColor();
+}
+function fillColor() {
+	percent1 = (sliderOne.value / sliderMaxValue) * 100;
+	percent2 = (sliderTwo.value / sliderMaxValue) * 100;
+	sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #EC7C03 ${percent1}% , #EC7C03 ${percent2}%, #dadae5 ${percent2}%)`;
+}
