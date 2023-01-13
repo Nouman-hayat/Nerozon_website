@@ -27,7 +27,7 @@
 </head>
 
 <body>
-    <header id="header">
+    <Header id="header">
         <div class="container">
             <div class="top-header-wrapper">
                 <ul>
@@ -49,31 +49,74 @@
                 <nav>
                     <div class="logo-action-header-inner">
                         <div class="navbar-logo">
-                            <a class="" href="#">
-                                <img src="./assets/img/nerozon web.png" alt="" />
+                            <a class="" href="index.html">
+                                <img src="./assets/img/nerozon web.png" alt="">
                             </a>
                         </div>
                         <div class="actions-wrapper">
                             <div class="navbar-search">
-                                <form class="row row-cols-lg-auto align-items-center">
+                                <form class="row row-cols-lg-auto  align-items-center">
                                     <div class="col-12">
+
                                         <div class="input-group">
+
                                             <input type="text" class="form-control" id="inlineFormInputGroupUsername"
-                                                placeholder="Search product" />
+                                                placeholder="Search product">
                                             <div class="button-icon-bottom-left">
-                                                <button type="submit" class="btn">
-                                                    <i class="bi bi-search px-3"></i>
-                                                </button>
+                                                <button type="submit" class="btn"> <i
+                                                        class="bi bi-search px-3"></i></button>
+
                                             </div>
+
                                         </div>
                                     </div>
+
                                 </form>
+                                <ul class="navbar-search-history">
+                                    <li>
+                                        <div class="item-icon-search-history">
+                                            <div class="search-history-image-wrapper">
+                                                <img src="./assets/img/headphone.png" alt="">
+                                            </div>
+                                            <div class="search-history-description">
+
+                                                <h6>Bluetooth <span>earphones</span></h6>
+                                                <p>In headohines & Speakers</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-icon-search-history">
+                                            <div class="search-history-image-wrapper">
+                                                <img src="./assets/img/search.png" class="search-history-icon" alt="">
+                                            </div>
+                                            <div class="search-history-description">
+
+                                                <h6>Bluetooth <span>earphones</span></h6>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-icon-search-history">
+                                            <div class="search-history-image-wrapper">
+                                                <img src="./assets/img/search.png" class="search-history-icon" alt="">
+                                            </div>
+                                            <div class="search-history-description">
+
+                                                <h6>Bluetooth <span>headphone</span></h6>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                             <div class="navbar-cart-wrapper px-2">
-                                <a href="" class="btn">
+                                <a href="./cartpage.html" class="btn">
                                     <span class="cart-icon-wrapper">
-                                        <i class="bi bi-cart2"></i>
-                                        <span class="cart-number"> 2 </span>
+                                        <i class="bi bi-cart2"></i> <span class="cart-number">
+                                            2
+                                        </span>
                                     </span>
                                     Cart
                                 </a>
@@ -81,32 +124,100 @@
                             <div class="notifiaction-btn-wrapper px-2">
                                 <a href="" class="btn">
                                     <span class="bell-icon-wrapper">
-                                        <i class="bi bi-bell-fill"></i>
-                                        <span class="dot-color">
+                                        <i class="bi bi-bell-fill"></i> <span class="dot-color">
                                             <i class="bi bi-circle-fill"></i>
                                         </span>
                                     </span>
+
                                 </a>
                             </div>
-                            <div class="navbar-login-btn ps-2">
-                                <a href="" class="btn"> Sign in/Sign up</a>
+                            <div class="navbar-user-dropdown ps-2">
+                                <div class="btn-group">
+                                    <button type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <i class="bi bi-person-fill"></i> Shubham
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end">
+                                        <li>
+                                            <a href="./profileinformation.html" class="navbar-user-topbar">
+                                                <h6>My Account</h6>
+                                                <p>Shubham</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./myorders.html" class="navbar-user-item ">
+
+                                                <p>Order</p>
+
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./cartpage.html" class="navbar-user-item ">
+
+                                                <p>Cart</p>
+                                                <span>3</span>
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./wallet.html" class="navbar-user-item ">
+
+                                                <p>Wallet</p>
+
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./orderprocess.html" class="navbar-user-item ">
+
+                                                <p>Wishlist</p>
+                                                <span>63</span>
+
+                                            </a>
+                                        </li>
+                                        <li> <a href="./addnewaddress.html" class="navbar-user-item ">
+
+                                                <p>Saved Address</p>
+
+
+                                            </a></li>
+                                        <li>
+                                            <a href="./setting.html" class="navbar-user-item ">
+
+                                                    <p>Setting</p>
+
+
+                                                </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="navbar-user-item ">
+                                            
+                                                <p>Logout</p>
+                                            
+                                            
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
+
                     </div>
                 </nav>
             </div>
             <div class="bottom-header-wrapper">
                 <nav>
                     <div class="wrapper">
-                        <input type="radio" name="slider" id="menu-btn" />
-                        <input type="radio" name="slider" id="close-btn" />
+                        <input type="radio" name="slider" id="menu-btn">
+                        <input type="radio" name="slider" id="close-btn">
                         <ul class="nav-links">
                             <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
 
                             <li>
                                 <a href="#" class="desktop-item">Electronics <i
                                         class="bi bi-caret-down-fill text-white"></i></a>
-                                <input type="checkbox" id="showMega" />
+                                <input type="checkbox" id="showMega">
                                 <label for="showMega" class="mobile-item">Electronics <i
                                         class="bi bi-caret-down-fill text-white"></i></label>
                                 <div class="mega-box">
@@ -164,6 +275,8 @@
                                                 <li>
                                                     <a href="#">Mobile Holders</a>
                                                 </li>
+
+
                                             </ul>
 
                                             <header>Smart Wearable Tech</header>
@@ -177,6 +290,7 @@
                                                 <li>
                                                     <a href="#">Smart Bands </a>
                                                 </li>
+
                                             </ul>
                                         </div>
                                         <div class="row">
@@ -197,6 +311,7 @@
                                                 <li>
                                                     <a href="#">Mobile Cables </a>
                                                 </li>
+
                                             </ul>
 
                                             <header>Smart Wearable Tech</header>
@@ -210,6 +325,7 @@
                                                 <li>
                                                     <a href="#">Smart Bands </a>
                                                 </li>
+
                                             </ul>
                                         </div>
                                         <div class="row">
@@ -230,6 +346,7 @@
                                                 <li>
                                                     <a href="#">Mobile Cables </a>
                                                 </li>
+
                                             </ul>
 
                                             <header>Smart Wearable Tech</header>
@@ -243,6 +360,7 @@
                                                 <li>
                                                     <a href="#">Smart Bands </a>
                                                 </li>
+
                                             </ul>
                                         </div>
                                         <div class="row">
@@ -263,6 +381,7 @@
                                                 <li>
                                                     <a href="#">Mobile Cables </a>
                                                 </li>
+
                                             </ul>
 
                                             <header>Smart Wearable Tech</header>
@@ -276,6 +395,7 @@
                                                 <li>
                                                     <a href="#">Smart Bands </a>
                                                 </li>
+
                                             </ul>
                                         </div>
                                     </div>
@@ -284,7 +404,7 @@
                             <li>
                                 <a href="#" class="desktop-item">Grocery<i
                                         class="bi bi-caret-down-fill text-white"></i></a>
-                                <input type="checkbox" id="showMega" />
+                                <input type="checkbox" id="showMega">
                                 <label for="showMega" class="mobile-item">Grocery<i
                                         class="bi bi-caret-down-fill text-white"></i></label>
                                 <div class="mega-box">
@@ -342,6 +462,8 @@
                                                 <li>
                                                     <a href="#">Mobile Holders</a>
                                                 </li>
+
+
                                             </ul>
 
                                             <header>Smart Wearable Tech</header>
@@ -355,6 +477,7 @@
                                                 <li>
                                                     <a href="#">Smart Bands </a>
                                                 </li>
+
                                             </ul>
                                         </div>
                                         <div class="row">
@@ -375,6 +498,7 @@
                                                 <li>
                                                     <a href="#">Mobile Cables </a>
                                                 </li>
+
                                             </ul>
 
                                             <header>Smart Wearable Tech</header>
@@ -388,6 +512,7 @@
                                                 <li>
                                                     <a href="#">Smart Bands </a>
                                                 </li>
+
                                             </ul>
                                         </div>
                                         <div class="row">
@@ -408,6 +533,7 @@
                                                 <li>
                                                     <a href="#">Mobile Cables </a>
                                                 </li>
+
                                             </ul>
 
                                             <header>Smart Wearable Tech</header>
@@ -421,6 +547,7 @@
                                                 <li>
                                                     <a href="#">Smart Bands </a>
                                                 </li>
+
                                             </ul>
                                         </div>
                                         <div class="row">
@@ -441,6 +568,7 @@
                                                 <li>
                                                     <a href="#">Mobile Cables </a>
                                                 </li>
+
                                             </ul>
 
                                             <header>Smart Wearable Tech</header>
@@ -454,6 +582,7 @@
                                                 <li>
                                                     <a href="#">Smart Bands </a>
                                                 </li>
+
                                             </ul>
                                         </div>
                                     </div>
@@ -462,9 +591,9 @@
                             <li>
                                 <a href="#" class="desktop-item">TV & Appliance<i
                                         class="bi bi-caret-down-fill text-white"></i></a>
-                                <input type="checkbox" id="showMega" />
-                                <label for="showMega" class="mobile-item">TV & Appliance
-                                    <i class="bi bi-caret-down-fill text-white"></i></label>
+                                <input type="checkbox" id="showMega">
+                                <label for="showMega" class="mobile-item">TV & Appliance <i
+                                        class="bi bi-caret-down-fill text-white"></i></label>
                                 <div class="mega-box">
                                     <div class="content">
                                         <div class="row">
@@ -520,6 +649,8 @@
                                                 <li>
                                                     <a href="#">Mobile Holders</a>
                                                 </li>
+
+
                                             </ul>
 
                                             <header>Smart Wearable Tech</header>
@@ -533,6 +664,7 @@
                                                 <li>
                                                     <a href="#">Smart Bands </a>
                                                 </li>
+
                                             </ul>
                                         </div>
                                         <div class="row">
@@ -553,6 +685,7 @@
                                                 <li>
                                                     <a href="#">Mobile Cables </a>
                                                 </li>
+
                                             </ul>
 
                                             <header>Smart Wearable Tech</header>
@@ -566,6 +699,7 @@
                                                 <li>
                                                     <a href="#">Smart Bands </a>
                                                 </li>
+
                                             </ul>
                                         </div>
                                         <div class="row">
@@ -586,6 +720,7 @@
                                                 <li>
                                                     <a href="#">Mobile Cables </a>
                                                 </li>
+
                                             </ul>
 
                                             <header>Smart Wearable Tech</header>
@@ -599,6 +734,7 @@
                                                 <li>
                                                     <a href="#">Smart Bands </a>
                                                 </li>
+
                                             </ul>
                                         </div>
                                         <div class="row">
@@ -619,6 +755,7 @@
                                                 <li>
                                                     <a href="#">Mobile Cables </a>
                                                 </li>
+
                                             </ul>
 
                                             <header>Smart Wearable Tech</header>
@@ -632,6 +769,7 @@
                                                 <li>
                                                     <a href="#">Smart Bands </a>
                                                 </li>
+
                                             </ul>
                                         </div>
                                     </div>
@@ -640,7 +778,7 @@
                             <li>
                                 <a href="#" class="desktop-item">Men <i
                                         class="bi bi-caret-down-fill text-white"></i></a>
-                                <input type="checkbox" id="showMega" />
+                                <input type="checkbox" id="showMega">
                                 <label for="showMega" class="mobile-item">Men <i
                                         class="bi bi-caret-down-fill text-white"></i></label>
                                 <div class="mega-box">
@@ -698,6 +836,8 @@
                                                 <li>
                                                     <a href="#">Mobile Holders</a>
                                                 </li>
+
+
                                             </ul>
 
                                             <header>Smart Wearable Tech</header>
@@ -711,6 +851,7 @@
                                                 <li>
                                                     <a href="#">Smart Bands </a>
                                                 </li>
+
                                             </ul>
                                         </div>
                                         <div class="row">
@@ -731,6 +872,7 @@
                                                 <li>
                                                     <a href="#">Mobile Cables </a>
                                                 </li>
+
                                             </ul>
 
                                             <header>Smart Wearable Tech</header>
@@ -744,6 +886,7 @@
                                                 <li>
                                                     <a href="#">Smart Bands </a>
                                                 </li>
+
                                             </ul>
                                         </div>
                                         <div class="row">
@@ -764,6 +907,7 @@
                                                 <li>
                                                     <a href="#">Mobile Cables </a>
                                                 </li>
+
                                             </ul>
 
                                             <header>Smart Wearable Tech</header>
@@ -777,6 +921,7 @@
                                                 <li>
                                                     <a href="#">Smart Bands </a>
                                                 </li>
+
                                             </ul>
                                         </div>
                                         <div class="row">
@@ -797,6 +942,7 @@
                                                 <li>
                                                     <a href="#">Mobile Cables </a>
                                                 </li>
+
                                             </ul>
 
                                             <header>Smart Wearable Tech</header>
@@ -810,6 +956,7 @@
                                                 <li>
                                                     <a href="#">Smart Bands </a>
                                                 </li>
+
                                             </ul>
                                         </div>
                                     </div>
@@ -818,7 +965,7 @@
                             <li>
                                 <a href="#" class="desktop-item">Women<i
                                         class="bi bi-caret-down-fill text-white"></i></a>
-                                <input type="checkbox" id="showMega" />
+                                <input type="checkbox" id="showMega">
                                 <label for="showMega" class="mobile-item">Women <i
                                         class="bi bi-caret-down-fill text-white"></i></label>
                                 <div class="mega-box">
@@ -876,6 +1023,8 @@
                                                 <li>
                                                     <a href="#">Mobile Holders</a>
                                                 </li>
+
+
                                             </ul>
 
                                             <header>Smart Wearable Tech</header>
@@ -889,6 +1038,7 @@
                                                 <li>
                                                     <a href="#">Smart Bands </a>
                                                 </li>
+
                                             </ul>
                                         </div>
                                         <div class="row">
@@ -909,6 +1059,7 @@
                                                 <li>
                                                     <a href="#">Mobile Cables </a>
                                                 </li>
+
                                             </ul>
 
                                             <header>Smart Wearable Tech</header>
@@ -922,6 +1073,7 @@
                                                 <li>
                                                     <a href="#">Smart Bands </a>
                                                 </li>
+
                                             </ul>
                                         </div>
                                         <div class="row">
@@ -942,6 +1094,7 @@
                                                 <li>
                                                     <a href="#">Mobile Cables </a>
                                                 </li>
+
                                             </ul>
 
                                             <header>Smart Wearable Tech</header>
@@ -955,6 +1108,7 @@
                                                 <li>
                                                     <a href="#">Smart Bands </a>
                                                 </li>
+
                                             </ul>
                                         </div>
                                         <div class="row">
@@ -975,6 +1129,7 @@
                                                 <li>
                                                     <a href="#">Mobile Cables </a>
                                                 </li>
+
                                             </ul>
 
                                             <header>Smart Wearable Tech</header>
@@ -988,15 +1143,16 @@
                                                 <li>
                                                     <a href="#">Smart Bands </a>
                                                 </li>
+
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                             </li>
                             <li>
-                                <a href="#" class="desktop-item">Baby and Kids
-                                    <i class="bi bi-caret-down-fill text-white"></i></a>
-                                <input type="checkbox" id="showMega" />
+                                <a href="#" class="desktop-item">Baby and Kids <i
+                                        class="bi bi-caret-down-fill text-white"></i></a>
+                                <input type="checkbox" id="showMega">
                                 <label for="showMega" class="mobile-item">Baby and Kids<i
                                         class="bi bi-caret-down-fill text-white"></i></label>
                                 <div class="mega-box">
@@ -1054,6 +1210,8 @@
                                                 <li>
                                                     <a href="#">Mobile Holders</a>
                                                 </li>
+
+
                                             </ul>
 
                                             <header>Smart Wearable Tech</header>
@@ -1067,6 +1225,7 @@
                                                 <li>
                                                     <a href="#">Smart Bands </a>
                                                 </li>
+
                                             </ul>
                                         </div>
                                         <div class="row">
@@ -1087,6 +1246,7 @@
                                                 <li>
                                                     <a href="#">Mobile Cables </a>
                                                 </li>
+
                                             </ul>
 
                                             <header>Smart Wearable Tech</header>
@@ -1100,6 +1260,7 @@
                                                 <li>
                                                     <a href="#">Smart Bands </a>
                                                 </li>
+
                                             </ul>
                                         </div>
                                         <div class="row">
@@ -1120,6 +1281,7 @@
                                                 <li>
                                                     <a href="#">Mobile Cables </a>
                                                 </li>
+
                                             </ul>
 
                                             <header>Smart Wearable Tech</header>
@@ -1133,6 +1295,7 @@
                                                 <li>
                                                     <a href="#">Smart Bands </a>
                                                 </li>
+
                                             </ul>
                                         </div>
                                         <div class="row">
@@ -1153,6 +1316,7 @@
                                                 <li>
                                                     <a href="#">Mobile Cables </a>
                                                 </li>
+
                                             </ul>
 
                                             <header>Smart Wearable Tech</header>
@@ -1166,17 +1330,18 @@
                                                 <li>
                                                     <a href="#">Smart Bands </a>
                                                 </li>
+
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                             </li>
                             <li>
-                                <a href="#" class="desktop-item">Home & Furniture
-                                    <i class="bi bi-caret-down-fill text-white"></i></a>
-                                <input type="checkbox" id="showMega" />
-                                <label for="showMega" class="mobile-item">Home & Furniture
-                                    <i class="bi bi-caret-down-fill text-white"></i></label>
+                                <a href="#" class="desktop-item">Home & Furniture <i
+                                        class="bi bi-caret-down-fill text-white"></i></a>
+                                <input type="checkbox" id="showMega">
+                                <label for="showMega" class="mobile-item">Home & Furniture <i
+                                        class="bi bi-caret-down-fill text-white"></i></label>
                                 <div class="mega-box">
                                     <div class="content">
                                         <div class="row">
@@ -1232,6 +1397,8 @@
                                                 <li>
                                                     <a href="#">Mobile Holders</a>
                                                 </li>
+
+
                                             </ul>
 
                                             <header>Smart Wearable Tech</header>
@@ -1245,6 +1412,7 @@
                                                 <li>
                                                     <a href="#">Smart Bands </a>
                                                 </li>
+
                                             </ul>
                                         </div>
                                         <div class="row">
@@ -1265,6 +1433,7 @@
                                                 <li>
                                                     <a href="#">Mobile Cables </a>
                                                 </li>
+
                                             </ul>
 
                                             <header>Smart Wearable Tech</header>
@@ -1278,6 +1447,7 @@
                                                 <li>
                                                     <a href="#">Smart Bands </a>
                                                 </li>
+
                                             </ul>
                                         </div>
                                         <div class="row">
@@ -1298,6 +1468,7 @@
                                                 <li>
                                                     <a href="#">Mobile Cables </a>
                                                 </li>
+
                                             </ul>
 
                                             <header>Smart Wearable Tech</header>
@@ -1311,6 +1482,7 @@
                                                 <li>
                                                     <a href="#">Smart Bands </a>
                                                 </li>
+
                                             </ul>
                                         </div>
                                         <div class="row">
@@ -1331,6 +1503,7 @@
                                                 <li>
                                                     <a href="#">Mobile Cables </a>
                                                 </li>
+
                                             </ul>
 
                                             <header>Smart Wearable Tech</header>
@@ -1344,15 +1517,16 @@
                                                 <li>
                                                     <a href="#">Smart Bands </a>
                                                 </li>
+
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                             </li>
                             <li>
-                                <a href="#" class="desktop-item">Sport and books
-                                    <i class="bi bi-caret-down-fill text-white"></i></a>
-                                <input type="checkbox" id="showMega" />
+                                <a href="#" class="desktop-item">Sport and books <i
+                                        class="bi bi-caret-down-fill text-white"></i></a>
+                                <input type="checkbox" id="showMega">
                                 <label for="showMega" class="mobile-item">Sport and books</label>
                                 <div class="mega-box">
                                     <div class="content">
@@ -1409,6 +1583,8 @@
                                                 <li>
                                                     <a href="#">Mobile Holders</a>
                                                 </li>
+
+
                                             </ul>
 
                                             <header>Smart Wearable Tech</header>
@@ -1422,6 +1598,7 @@
                                                 <li>
                                                     <a href="#">Smart Bands </a>
                                                 </li>
+
                                             </ul>
                                         </div>
                                         <div class="row">
@@ -1442,6 +1619,7 @@
                                                 <li>
                                                     <a href="#">Mobile Cables </a>
                                                 </li>
+
                                             </ul>
 
                                             <header>Smart Wearable Tech</header>
@@ -1455,6 +1633,7 @@
                                                 <li>
                                                     <a href="#">Smart Bands </a>
                                                 </li>
+
                                             </ul>
                                         </div>
                                         <div class="row">
@@ -1475,6 +1654,7 @@
                                                 <li>
                                                     <a href="#">Mobile Cables </a>
                                                 </li>
+
                                             </ul>
 
                                             <header>Smart Wearable Tech</header>
@@ -1488,6 +1668,7 @@
                                                 <li>
                                                     <a href="#">Smart Bands </a>
                                                 </li>
+
                                             </ul>
                                         </div>
                                         <div class="row">
@@ -1508,6 +1689,7 @@
                                                 <li>
                                                     <a href="#">Mobile Cables </a>
                                                 </li>
+
                                             </ul>
 
                                             <header>Smart Wearable Tech</header>
@@ -1521,6 +1703,7 @@
                                                 <li>
                                                     <a href="#">Smart Bands </a>
                                                 </li>
+
                                             </ul>
                                         </div>
                                     </div>
@@ -1529,7 +1712,7 @@
                             <li>
                                 <a href="#" class="desktop-item">More<i
                                         class="bi bi-caret-down-fill text-white"></i></a>
-                                <input type="checkbox" id="showMega" />
+                                <input type="checkbox" id="showMega">
                                 <label for="showMega" class="mobile-item">More</label>
                                 <div class="mega-box">
                                     <div class="content">
@@ -1586,6 +1769,8 @@
                                                 <li>
                                                     <a href="#">Mobile Holders</a>
                                                 </li>
+
+
                                             </ul>
 
                                             <header>Smart Wearable Tech</header>
@@ -1599,6 +1784,7 @@
                                                 <li>
                                                     <a href="#">Smart Bands </a>
                                                 </li>
+
                                             </ul>
                                         </div>
                                         <div class="row">
@@ -1619,6 +1805,7 @@
                                                 <li>
                                                     <a href="#">Mobile Cables </a>
                                                 </li>
+
                                             </ul>
 
                                             <header>Smart Wearable Tech</header>
@@ -1632,6 +1819,7 @@
                                                 <li>
                                                     <a href="#">Smart Bands </a>
                                                 </li>
+
                                             </ul>
                                         </div>
                                         <div class="row">
@@ -1652,6 +1840,7 @@
                                                 <li>
                                                     <a href="#">Mobile Cables </a>
                                                 </li>
+
                                             </ul>
 
                                             <header>Smart Wearable Tech</header>
@@ -1665,6 +1854,7 @@
                                                 <li>
                                                     <a href="#">Smart Bands </a>
                                                 </li>
+
                                             </ul>
                                         </div>
                                         <div class="row">
@@ -1685,6 +1875,7 @@
                                                 <li>
                                                     <a href="#">Mobile Cables </a>
                                                 </li>
+
                                             </ul>
 
                                             <header>Smart Wearable Tech</header>
@@ -1698,6 +1889,7 @@
                                                 <li>
                                                     <a href="#">Smart Bands </a>
                                                 </li>
+
                                             </ul>
                                         </div>
                                     </div>
@@ -1707,49 +1899,52 @@
                         <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
                     </div>
                 </nav>
-            </div>
-        </div>
-    </header>
 
-    <div class="quick-link-wrapper">
-        <div class="container">
-            <div class="quick-link-inner-wrapper m-auto">
-                <span class="me-2"> Go Quick To :</span>
-                <ul class="quick-link-list">
-                    <li>
-                        <a href="">Shirt</a>
-                    </li>
-                    <li>
-                        <a href="">Mobile</a>
-                    </li>
-                    <li>
-                        <a href="">TV</a>
-                    </li>
-                    <li>
-                        <a href="">Washingmachine</a>
-                    </li>
-                    <li>
-                        <a href="">Cameras</a>
-                    </li>
-                    <li>
-                        <a href="">Furniture</a>
-                    </li>
-                    <li>
-                        <a href="">Refrigerator</a>
-                    </li>
-                    <li>
-                        <a href="">Bedsheet</a>
-                    </li>
-                    <li>
-                        <a href="">Sports</a>
-                    </li>
-                    <li>
-                        <a href="">Lighting</a>
-                    </li>
-                </ul>
             </div>
         </div>
-    </div>
+    </Header>
+
+   <div class="quick-link-outer-wrapper">
+     <div class="quick-link-wrapper">
+         <div class="container">
+             <div class="quick-link-inner-wrapper m-auto">
+                 <span class="me-2"> Go Quick To :</span>
+                 <ul class="quick-link-list">
+                     <li>
+                         <a href="">Shirt</a>
+                     </li>
+                     <li>
+                         <a href="">Mobile</a>
+                     </li>
+                     <li>
+                         <a href="">TV</a>
+                     </li>
+                     <li>
+                         <a href="">Washingmachine</a>
+                     </li>
+                     <li>
+                         <a href="">Cameras</a>
+                     </li>
+                     <li>
+                         <a href="">Furniture</a>
+                     </li>
+                     <li>
+                         <a href="">Refrigerator</a>
+                     </li>
+                     <li>
+                         <a href="">Bedsheet</a>
+                     </li>
+                     <li>
+                         <a href="">Sports</a>
+                     </li>
+                     <li>
+                         <a href="">Lighting</a>
+                     </li>
+                 </ul>
+             </div>
+         </div>
+     </div>
+   </div>
 
     <div id="user-dashboard-home">
         <div class="user-dashboard-home-inner-wrapper">
@@ -1757,15 +1952,13 @@
                 <div class="row">
                     <div class="col-lg-2">
                         <div class="user-dashboard-home-menu">
-                            <ul class="list-group">
-                                <li class="list-group-item"><a href="#">My Account</a></li>
-                                <li class="list-group-item"><a href="#">Saved Address</a></li>
-                                <li class="list-group-item"><a href="#">My Wishlist</a></li>
-                                <li class="list-group-item active-list">
-                                    <a href="#">My Order</a>
-                                </li>
-                                <li class="list-group-item"><a href="#">My Wallet</a></li>
-                                <li class="list-group-item"><a href="#">Setting</a></li>
+                           <ul class="list-group">
+                                <li class="list-group-item "><a href="./profileinformation.html">My Account</a> </li>
+                                <li class="list-group-item "><a href="./addnewaddress.html">Saved Address</a></li>
+                                <li class="list-group-item"><a href="./orderprocess.html">My Wishlist</a></li>
+                                <li class="list-group-item"><a href="./myorders.html">My Order</a></li>
+                                <li class="list-group-item"><a href="./wallet.html">My Wallet</a></li>
+                                <li class="list-group-item active-list"><a href="./setting.html">Setting</a></li>
                             </ul>
                             <h6>Filter</h6>
                             <div class="return-filter-product margin-sect">

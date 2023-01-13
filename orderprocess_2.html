@@ -27,7 +27,7 @@
 </head>
 
 <body>
-    <Header id="header">
+   <Header id="header">
         <div class="container">
             <div class="top-header-wrapper">
                 <ul>
@@ -49,7 +49,7 @@
                 <nav>
                     <div class="logo-action-header-inner">
                         <div class="navbar-logo">
-                            <a class="" href="#">
+                            <a class="" href="index.html">
                                 <img src="./assets/img/nerozon web.png" alt="">
                             </a>
                         </div>
@@ -72,9 +72,47 @@
                                     </div>
 
                                 </form>
+                                <ul class="navbar-search-history">
+                                    <li>
+                                        <div class="item-icon-search-history">
+                                            <div class="search-history-image-wrapper">
+                                                <img src="./assets/img/headphone.png" alt="">
+                                            </div>
+                                            <div class="search-history-description">
+
+                                                <h6>Bluetooth <span>earphones</span></h6>
+                                                <p>In headohines & Speakers</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-icon-search-history">
+                                            <div class="search-history-image-wrapper">
+                                                <img src="./assets/img/search.png" class="search-history-icon" alt="">
+                                            </div>
+                                            <div class="search-history-description">
+
+                                                <h6>Bluetooth <span>earphones</span></h6>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-icon-search-history">
+                                            <div class="search-history-image-wrapper">
+                                                <img src="./assets/img/search.png" class="search-history-icon" alt="">
+                                            </div>
+                                            <div class="search-history-description">
+
+                                                <h6>Bluetooth <span>headphone</span></h6>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                             <div class="navbar-cart-wrapper px-2">
-                                <a href="" class="btn">
+                                <a href="./cartpage.html" class="btn">
                                     <span class="cart-icon-wrapper">
                                         <i class="bi bi-cart2"></i> <span class="cart-number">
                                             2
@@ -93,8 +131,75 @@
 
                                 </a>
                             </div>
-                            <div class="navbar-login-btn ps-2">
-                                <a href="" class="btn"> Sign in/Sign up</a>
+                            <div class="navbar-user-dropdown ps-2">
+                                <div class="btn-group">
+                                    <button type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <i class="bi bi-person-fill"></i> Shubham
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end">
+                                        <li>
+                                            <a href="./profileinformation.html" class="navbar-user-topbar">
+                                                <h6>My Account</h6>
+                                                <p>Shubham</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./myorders.html" class="navbar-user-item ">
+
+                                                <p>Order</p>
+
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./cartpage.html" class="navbar-user-item ">
+
+                                                <p>Cart</p>
+                                                <span>3</span>
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./wallet.html" class="navbar-user-item ">
+
+                                                <p>Wallet</p>
+
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./orderprocess.html" class="navbar-user-item ">
+
+                                                <p>Wishlist</p>
+                                                <span>63</span>
+
+                                            </a>
+                                        </li>
+                                        <li> <a href="./addnewaddress.html" class="navbar-user-item ">
+
+                                                <p>Saved Address</p>
+
+
+                                            </a></li>
+                                        <li>
+                                            <a href="./setting.html" class="navbar-user-item ">
+
+                                                    <p>Setting</p>
+
+
+                                                </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="navbar-user-item ">
+                                            
+                                                <p>Logout</p>
+                                            
+                                            
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
 
@@ -1799,45 +1904,47 @@
         </div>
     </Header>
 
-    <div class="quick-link-wrapper">
-        <div class="container">
-            <div class="quick-link-inner-wrapper m-auto">
-                <span class="me-2"> Go Quick To :</span>
-                <ul class="quick-link-list">
-                    <li>
-                        <a href="">Shirt</a>
-                    </li>
-                    <li>
-                        <a href="">Mobile</a>
-                    </li>
-                    <li>
-                        <a href="">TV</a>
-                    </li>
-                    <li>
-                        <a href="">Washingmachine</a>
-                    </li>
-                    <li>
-                        <a href="">Cameras</a>
-                    </li>
-                    <li>
-                        <a href="">Furniture</a>
-                    </li>
-                    <li>
-                        <a href="">Refrigerator</a>
-                    </li>
-                    <li>
-                        <a href="">Bedsheet</a>
-                    </li>
-                    <li>
-                        <a href="">Sports</a>
-                    </li>
-                    <li>
-                        <a href="">Lighting</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+   <div class="quick-link-outer-wrapper">
+     <div class="quick-link-wrapper">
+         <div class="container">
+             <div class="quick-link-inner-wrapper m-auto">
+                 <span class="me-2"> Go Quick To :</span>
+                 <ul class="quick-link-list">
+                     <li>
+                         <a href="">Shirt</a>
+                     </li>
+                     <li>
+                         <a href="">Mobile</a>
+                     </li>
+                     <li>
+                         <a href="">TV</a>
+                     </li>
+                     <li>
+                         <a href="">Washingmachine</a>
+                     </li>
+                     <li>
+                         <a href="">Cameras</a>
+                     </li>
+                     <li>
+                         <a href="">Furniture</a>
+                     </li>
+                     <li>
+                         <a href="">Refrigerator</a>
+                     </li>
+                     <li>
+                         <a href="">Bedsheet</a>
+                     </li>
+                     <li>
+                         <a href="">Sports</a>
+                     </li>
+                     <li>
+                         <a href="">Lighting</a>
+                     </li>
+                 </ul>
+             </div>
+         </div>
+     </div>
+   </div>
 
     <div class="order-process-wrapper">
         <div class="container">
